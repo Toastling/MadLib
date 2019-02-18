@@ -24,27 +24,13 @@ blanks = [
     "noun",
 ]
 
-print blanks
+answers = ()
 
-answers = (
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-    "x",
-)
+for thing in blanks:
+    answer = raw_input("Give me a " + thing + ":")
+    answers = answers + (answer,)
+
 
 print storyWithBlanks % answers
+
+
